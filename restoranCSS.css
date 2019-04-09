@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Staatliches|Laila');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f8f8ff;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MINI HEADLINES */
+.mainheadline {
+    font-family: Pacifico;
+    font-size: 5vw;
+    color: hsla(16, 100%, 60%, 1);
+    text-shadow: 2px 1px black;
+}
+
+
+/* HEADER (LOGO AND NAVIGATION BARS) */
+#header {
+    font-family: Staatliches;
+    height: 15vh;
+    background-color: hsla(45, 0%, 61%, 0.35);
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+#logo {
+    flex: 1;
+}
+#logo img {
+    min-width: 150px;
+    width: 15vw;
+}
+
+/* FIRST NAVIGATION BAR */
+#navigation {
+    flex: 3;
+    font-size: 3vh;
+    margin: 0 5vw 0 5vw;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navigation a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.7s;
+    padding: 5px;
+}
+#navigation a:hover {
+    color: hsla(16, 100%, 60%, 1);
+    border: 5px solid hsla(16, 100%, 60%, 1);
+}
+
+#altnavigation {
+    display: none;
+}
+
+/* HOME PAGE */
+#firstpage {
+    height: 120vh;
+/* background */
+    background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    margin-bottom: 0;
+}
+/* First page headline (big text box) */
+#firstpageheadline {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px black;
+}
+#firstpageheadline h1 {
+    font-family: Pacifico;
+    font-size: 10vh;
+    margin: 0;
+}
+.bigfpname {
+    font-family: Staatliches;
+    font-size: 5vh;
+    margin: 0;
+}
+.mediumfpname {
+    font-family: Staatliches;
+    font-size: 3vh;
+    margin: 0;
+}
+
+/* MAIN BUTTON FOR EVERY BIG ASS BUTTON 
+______________________________________________________*/
+.mainbutton {
+    background-color: hsla(16, 100%, 60%, 1);
+    margin: 20px;
+    width: 14vw;
+    min-width: 150px;
+    height: 8vh;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px black;
+    cursor: pointer;
+    color: white;
+    font-family: Staatliches;
+    font-size: 3vh;
+    transition: 1s;
+}
+.mainbutton:hover {
+    background-color: hsla(16, 100%, 50%, 1);
+}
+
+
+/* ABOUT US */
+#aboutus {
+    height: 110vh;
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/784632/pexels-photo-784632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;  
+}
+#aboutustext {
+    padding-top: 5vh;
+    font-family: Laila;
+    margin: 0 10vw;
+    color: white;
+    text-shadow: 2px 1px black;
+    font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+/* STATISTIC - BETWEENER ONE */
+.betweener {
+    background-size: cover;
+    background-position: center;
+    
+}
+#betweenerone {
+    background-image: url("https://images.pexels.com/photos/1268558/pexels-photo-1268558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    padding: 0 10vw 0 10vw;
+    height: 30vh;
+    display: flex;
+}
+
+.betweenerblock {
+    flex: 1;
+    flex-direction: column;
+}
+
+.betweenerblock a {
+    color: hsla(16, 100%, 60%, 1);
+    font-size: 8vh;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+    font-weight: 700;
+    margin: 0;
+}
+
+.betweenerblock p {
+    font-family: Staatliches;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 2px 1px black;
+    margin: 0;
+}
+
+
+/* SPECIAL OFFER
+______________________________________________________*/
+#specialoffer {
+    height: 80vh;
+}
+
+/* ALT HEADLINE */
+.altheadline {
+    text-align: center;
+    font-family: Laila;
+    font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+/* OFFERS */
+#offers {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5vw 0 5vw;
+}
+.smallspecialtext {
+    font-family: Pacifico;
+    color: hsla(16, 100%, 60%, 1);
+}
+.offerdescription {
+    font-family: Laila;
+}
+.offer {
+    flex: 1;
+    display: flex;
+    margin: 5vh 2vw;
+    min-width: 250px;
+}
+.offertext {
+    flex: 2;
+    text-align: left;
+    margin-left: 5px;
+    font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+.offerimg {
+    border-radius: 50%;
+    border: 3px solid hsla(16, 100%, 60%, 1);
+}
+
+
+/* MENU */
+#menu {
+    height: 50vh;
+    padding-top: 5vh;
+    font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/612790/pexels-photo-612790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 1px black;
+}
+
+/* OPENING HOURS */
+#openinghours {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+#opening {
+    font-family: Pacifico;
+    font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+.openingtime {
+    font-family: Pacifico;
+    font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    color: hsla(16, 100%, 60%, 1);
+    text-shadow: 1px 1px black;
+}
+
+/* Reservation
+______________________________________________________*/
+#reservation {
+    height: 90vh;
+    text-align: center;
+}
+#reserve {
+    display: flex;
+    height: 40vh;
+    margin: 0 20vw 0 20vw;
+}
+
+/*form for reservation */
+.formbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.formbox input {
+    font-family: Laila;
+    width: 20vw;
+    min-width: 120px;
+    height: 8vh;
+    border: 2px solid grey;
+}
+ /* the one different button */
+.mbwhite {
+    background-color: transparent;
+    color: hsla(16, 100%, 60%, 1);
+    border: 1px solid hsla(16, 100%, 60%, 1);
+}
+.mbwhite:hover {
+    background-color: hsla(16, 100%, 10%, 1);
+}
+
+
+
+
+/* FEEDBACK */
+#feedback {
+    background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 90vh;
+    padding-top: 5vh;
+    color: white;
+    text-shadow: 2px 1px black;
+}
+#feedbackcontainer {
+    margin: 0 auto;
+    width: 80vw;
+    height: 40vh;
+}
+.fbcomment {
+    margin: 0 2vw;
+    font-family: Pacifico;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    
+}
+.fbcomment p span {
+    color: hsla(16, 100%, 60%, 1);
+}
+
+
+
+
+
+
+/* form container */
+#message {
+    text-align: center;
+    font-family: Laila;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 50vh;
+    padding-top: 10px;
+    margin-top: -9em;
+    margin-left: -15em;
+    border: 3px solid hsla(16, 100%, 60%, 1);
+    border-radius: 10%;
+    background-color: #f3f3f3;
+    visibility: hidden;
+    flex-direction: column;
+}
+#popUpForm {
+    margin: 0 auto;
+    min-width: 400px;
+    padding: 1em;
+
+}
+#popUpForm div + div {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    font-family: Laila;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+.messagebutton {
+    padding: 5px 20px;
+    background-color: hsla(16, 100%, 60%, 1);
+    color: white;
+    border-radius: 10%;
+}
+#not {
+    margin-left: 300px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    background-color: hsla(16, 100%, 60%, 1);
+    color: white;
+}
+
+
+#contact {
+    height: 100vh;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    /* NAVIGATION */
+    #navigation {
+        display: none;
+    }
+    #logo {
+        flex: 3;
+    }
+    #altnavigation {
+        font-family: Staatliches;
+        color: white;
+        font-size: 3vh;
+        background-color: transparent;
+        
+        height: 10vh;
+        width: 10vw;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #altnavigation option {
+        background-color: blue;
+    }
+    .offerimg {
+        height: 120px;
+        width: 120px;
+    }
+}
